@@ -19,6 +19,7 @@ body {
     height: 100%;
     width: calc(500%);
     transition: all 500ms ease-out 600ms;
+    display: flex;
 }
 
 .item {
@@ -26,7 +27,7 @@ body {
     margin: 0;
     padding: 0;
     display: inline-block;
-    width: calc(20% - 3px);
+    width: calc(20%);
     overflow: hidden;
     height: 100%;
 }
