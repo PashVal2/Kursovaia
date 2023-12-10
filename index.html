@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home plants</title>
+  <link rel="stylesheet" href="slider.css">
+  <link rel="stylesheet" href="menu.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="icon" href="img/logo.jpg">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Merriweather&family=Roboto:wght@300&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Jost:wght@300&family=Merriweather&family=Nanum+Pen+Script&family=Roboto:wght@300&family=Sunflower:wght@300&display=swap');
+</style>
+</head>
+<body>
+  <header id ="#">
+    <nav>
+      <a href="index.html"><h3>Home plant</h3></a>
+        <input type="checkbox" id="burger-toggle"> 
+        <label for="burger-toggle" id="burger">
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+        </label>
+        <ul id="menu">
+          <li><a href="content.html">ГАЛЕРЕЯ</a></li>
+          <li><span>|</span></li>
+          <li><a href="#" id="home">НАЧАЛО</a></li>
+          <li><a href="#footer" id="about">О НАС</a></li>
+        </ul>
+    </nav>
+  </header>
+  
+  
+  <div id="container">
+    <div id="allItems">
+      <div class="item">
+        <img src="img/Coleus.jpg" alt="img1" >
+        <div class="itemContent">
+          <h3>Сайт о домашних растениях</h3>
+          <p>Зеленое пространство, где вы найдете растения, соответствующие вашим условиям и желаниям.</p>
+          <a href="content.html">Подробнее</a>
+        </div>
+      </div>
+      <div class="item">
+        <img src="img/Roses.jpg" alt="img2">
+        <div class="itemContent">
+          <h3>Преобразите свой дом с помощью живой зелени</h3>
+          <p>Освежите свой интерьер живыми комнатными растениями. Они создадут уют и гармонию в вашем пространстве.</p>
+          <a href="content.html">Подробнее</a>
+        </div>
+      </div>
+      <div class="item">
+        <img src="img/Gasteria.jpg" alt="img3">
+        <div class="itemContent">
+          <h3>Откройте для себя разнообразие растений</h3>
+          <p>Изучите разнообразие комнатных растений и найдите те, которые подойдут для вашего дома.</p>
+          <a href="content.html">Подробнее</a>
+        </div>
+      </div>
+      <div class="item">
+        <img src="img/Ficus.jpg" alt="img4">
+        <div class="itemContent">
+          <h3>Откройте для себя разнообразие растений</h3>
+          <p>Изучите разнообразие комнатных растений и найдите те, которые подойдут для вашего дома.</p>
+          <a href="content.html">Подробнее</a>
+        </div>
+      </div>
+    </div>
+    
+    <div id="nextButton">
+      <img src="img/arrow.webp" alt="arrow">
+    </div>
+    <div id="backButton">
+      <img src="img/arrow.webp" alt="arrow">
+    </div>
+    <div id="numOfItems">
+      <div class="numItem"></div>
+      <div class="numItem"></div>
+      <div class="numItem"></div>
+      <div class="numItem"></div>
+    </div>
+  </div>
+
+  <footer id="footer">
+    <div class="container1">
+        <div class="partFoot">
+            <h3>О нас</h3>
+            <span></span>
+            <p>
+                Мы стремимся созидать уютное окружение, где каждый человек имеет возможность освоить навыки ухода за растениями, мы делимся своим опытом и обменивамся знаниями. Наша задача - внушать вдохновение и предоставлять помощь каждому, кто ценит мир растений.
+            </p>
+        </div>
+        <div class="partFoot">
+            <h3>Контакты</h3>
+            <span></span>
+            <p>
+              14 Тверская улица, 
+              Москва, 117513, 
+              Россия
+            </p>
+            <p>
+                <a href="tel:+79871234567">+7 987 123-45-67</a>
+            </p>
+            <a href="mailto:examle@mail.ru">example@mail.ru</a>
+        </div>
+    </div>
+    <div class="partFoot2">
+        © 2023 Сайт домашних комнатных растений
+    </div>
+</footer>
+</body>
+<script src="slider.js"></script>
+<script src="menu.js"></script>
+</html>

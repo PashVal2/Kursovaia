@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home plants</title>
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="form.css">
+    <link rel="icon" href="img/logo.jpg">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Merriweather&family=Roboto:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Jost:wght@300&family=Merriweather&family=Nanum+Pen+Script&family=Roboto:wght@300&family=Sunflower:wght@300&display=swap');
+    </style>
+</head>
+<body>
+    <header id ="#">
+        <nav>
+            <a href="index.html"><h3>Home plant</h3></a>
+            <input type="checkbox" id="burger-toggle"> 
+            <label for="burger-toggle" id="burger">
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+            </label>
+            <ul id="menu">
+                <li><a href="content.html">ГАЛЕРЕЯ</a></li>
+                <li><span>|</span></li>
+                <li><a href="#" id="home">НАЧАЛО</a></li>
+                <li><a href="#footer" id="about">О НАС</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="form_container">
+        <form action="">
+            <h3>Если собираетесь в отпуск или командировку, Вы можете оставить свои растения в нашем питомнике. Для этого оставьте заявку:</h3>
+            
+            <div class="group">
+                <label for="inp" class="lForInp">
+                    Имя
+                    <span>*</span>
+                </label>
+                <input type="text" name="inp" class="inp" required>
+            </div>
+            <div class="group">
+                <label for="inp" class="lForInp">
+                    Фамилия
+                    <span>*</span>
+                </label>
+                <input type="text" name="inp" class="inp" required>
+            </div>
+            <div class="group">
+                <label for="email" class="lForInp">
+                    Почта
+                    <span>*</span>
+                </label>
+                <input type="email" name="email" class="inp" required>
+            </div>
+            <div class="group">
+                <label for="tel" class="lForInp">
+                    Телефон
+                    <span>*</span>
+                </label>
+                <input type="tel" name="tel" class="inp" required>
+            </div>
+            <div class="containerForRadio">
+                <label>
+                    <input type="radio" name="radio" checked/>
+                    <span>3 дня</span>
+                </label>
+                <label>
+                    <input type="radio" name="radio"/>
+                    <span>Неделя</span>
+                </label>
+                <label>
+                    <input type="radio" name="radio"/>
+                    <span>2 недели</span>
+                </label>
+            </div>
+            <button>Отправить</button>
+        </form>
+    </div>
+
+    <footer id="footer">
+        <a id="About"></a>
+        <div class="container1">
+            <div class="partFoot">
+                <h3>О нас</h3>
+                <span></span>
+                <p>
+                    Мы стремимся созидать уютное окружение, где каждый человек имеет возможность освоить навыки ухода за растениями, мы делимся своим опытом и обменивамся знаниями. Наша задача - внушать вдохновение и предоставлять помощь каждому, кто ценит мир растений.
+                </p>
+                
+            </div>
+            <div class="partFoot">
+                <h3>Контакты</h3>
+                <span></span>
+                <p>
+                    14 Тверская улица, 
+                    Москва, 117513, 
+                    Россия
+                </p>
+                <p>
+                    <a href="tel:+79871234567">+7 987 123-45-67</a>
+                </p>
+                <a href="mailto:examle@mail.ru">example@mail.ru</a>
+            </div>
+        </div>
+        <div class="partFoot2">
+            © 2023 Сайт домашних комнатных растений
+        </div>
+    </footer>
+</body>
+<script src="form.js"></script>
+<script src="menu.js"></script>
+</html>

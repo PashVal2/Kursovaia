@@ -1,0 +1,244 @@
+:root {
+    --op: 0.9;
+}
+
+/* Реализация карточек */
+.card {
+    position: relative;
+    display: flex;
+    max-width: 400px;
+    min-width: 215px;
+    min-height: 155px;
+    width: 40%;
+    height: 40%;
+    margin: 5px;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Ширина 100% относительно карточки, а не изображения */
+    height: 100%; /* Высота 100% относительно карточки, а не изображения */
+    background: linear-gradient(to bottom, rgba(248, 240, 217, 0.479), rgba(112, 255, 126, 0.499));
+    color: #000000;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    filter: brightness(50%);
+}
+
+.card:hover::before {
+    opacity: 1; 
+}
+
+.card .card-content {
+    top: 5px;
+    visibility: hidden;
+    position: absolute;
+    color: white;
+}
+
+.card-content h3{
+    font-size: 20px;
+    padding-left: 5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.card-content p {
+   
+    font-size: 15px;
+    padding-left: 15px;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 5px;
+}
+
+.card:hover .card-content {
+    visibility: visible;
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 5);
+    z-index: 2;
+}
+
+.card-content a{
+    position: absolute;
+    font-size: 15px;
+    margin-left: 30%;
+    padding: 3%;
+    font-family:'Helvetica';
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+    text-transform: uppercase;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+@media screen and (width > 1299px){
+    .card-content h3 {
+        font-size: 25px;
+    }
+    .card-content a {
+        font-size: 20px;
+    }
+    .card-content p {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 1050px){
+    .card {
+        width: 70%;
+    }
+    .card-content h3 {
+        font-size: 25px;
+    }
+    .card-content a {
+        font-size: 20px;
+    }
+    .card-content p {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 800px){
+    .card {
+        width: 70%;
+    }
+    .card-content h3 {
+        margin-top: 10px;
+        font-size: 20px;
+    }
+    .card-content a {
+        font-size: 15px;
+    }
+    .card-content p {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 768px){
+    .card {
+        width: 90%;
+    }
+    .card-content h3 {
+        font-size: 25px;
+        
+    }
+    .card-content a {
+        font-size: 20px;
+    }
+    .card-content p {
+        font-size: 20px;
+        
+    }
+}
+@media screen and (max-width: 376px){
+    .card {
+        width: 90%;
+    }
+    .card-content h3 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    .card-content a {
+        font-size: 15px;
+    }
+    .card-content p {
+        font-size: 15px;
+        margin-top: 15px;
+    }
+}
+
+@keyframes animate1 {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes animate2 {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(100%);
+    }
+}
+
+@keyframes animate3 {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes animate4 {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+/*2 кнопка*/
+.button2 span:nth-child(1) {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), rgb(255, 255, 255));
+    animation: animate3 2s linear infinite;
+}
+
+.button2 span:nth-child(2) {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0), #ffffff);   
+    animation: animate4 2s linear infinite;
+    animation-delay: 1s;
+}
+
+.button2 span:nth-child(3) {
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), #ffffff);
+    animation: animate1 2s linear infinite;
+}
+
+.button2 span:nth-child(4) {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #ffffffc1);
+
+    animation: animate2 2s linear infinite;
+    animation-delay: 1s;
+}
+
+.button2:hover span{
+    visibility: visible;
+}
